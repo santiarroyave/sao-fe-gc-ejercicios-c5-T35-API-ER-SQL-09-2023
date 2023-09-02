@@ -30,4 +30,5 @@ builder.Services.AddDbContextPool<netflixContext>(options => options.UseSqlServe
 5. Agregar clase Cliente
 6. Agregar clase Vodeos
 7. Agregar netflixContext
+8. Agregar controllers (ClientesController y VideosController)
 

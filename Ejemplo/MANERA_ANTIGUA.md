@@ -1,5 +1,5 @@
 ﻿# Versiones antiguas
-En este ejemplo se muestra el código de cómo tal cual se ve en la unidad formativa.
+En este ejemplo se muestra el código tal cual se ve en la unidad formativa.
 
 Se usan versiónes anteriores donde hacia falta la clase **Startup.cs**. *(Actualmente ya no hace falta)*
 
