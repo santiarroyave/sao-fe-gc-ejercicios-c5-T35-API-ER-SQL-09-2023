@@ -1,5 +1,4 @@
-# Manera 2
-## Versiones actuales
+# Versiones actuales
 En este ejemplo se muestra el codigo configurado para las versiones actuales.
 
 En este caso se prescinde de la clase **Startup.cs**

@@ -1,4 +1,9 @@
 # Proyecto de ejemplo de la unidad formativa
+## Documentación
+- [Manera antigua de configurar la DB en Startup.cs](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/blob/ejemplo/Ejemplo/MANERA_ANTIGUA.md)
+- [Manera actual de configurar la DB en Program.cs](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/blob/ejemplo/Ejemplo/MANERA_ACTUAL.md)
+- [Más info de Startup.cs](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/blob/ejemplo/Ejemplo/Startup.cs)
+
 ## Pasos que he seguido
 1. Crear proyecto **ASP.NET Core Web API**
 2. Instalar los paquetes NuGet
