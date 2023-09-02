@@ -1,0 +1,12 @@
+Nota Jose:
+.Net: he dejado la instrucción para hacer la migración de BBDD a model, está en la carpeta de recursos del modulo C5.
+Con este comando .net genera los modelos desde la base de datos, es util para mapear la BBDD con Entity Framework.
+Es el equivalente al plugin g9 de Java.
+
+
+Recursos:
+Scaffold-DbContext “Server=192.168.1.135;Database=Inventory;User ID=remote;Password=remote” 
+Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models
+
+
+
