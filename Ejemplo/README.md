@@ -14,4 +14,15 @@
 }
 ```
 5. Configurar el archivo Startup
-> En versiones 6 y 7 este archivo ya no está presente, por lo que se deberá configurar en Program.cs
+> En versiones 6 y 7 este archivo ya no está presente, por lo que para proyectos simples se puede simplificar configurarandolo en Program.cs
+
+Más información en **MANERA_ACTUAL.md**
+```csharp
+// Configuramos la conexión con la base de datos SQL
+var connection = builder.Configuration.GetConnectionString("NetflixDatabase");
+builder.Services.AddDbContextPool<netflixContext>(options => options.UseSqlServer(connection));
+```
+5. Agregar clase Cliente
+6. Agregar clase Vodeos
+7. Agregar netflixContext
+
