@@ -11,7 +11,11 @@ namespace ex04
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-            builder.Services.AddDbContext<MyDbContext>(p => p.UseInMemoryDatabase("MyDbInMemory"));
+            // Configura la cadena de conexión a partir de appsettings.json y la versión de MySQL
+            var connectionString = builder.Configuration.GetConnectionString("MyDbSQL");
+            var serverVersion = new MySqlServerVersion(new Version());
+            // Agrega el contexto de la base de datos con la cadena de conexión de MySQL
+            builder.Services.AddDbContext<MyDbContext>(options => options.UseMySql(connectionString, serverVersion));
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

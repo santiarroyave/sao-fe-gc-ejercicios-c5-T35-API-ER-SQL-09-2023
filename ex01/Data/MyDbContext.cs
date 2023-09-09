@@ -32,8 +32,7 @@ namespace ex01.Data
             {
                 pp.ToTable("suministra");
 
-                pp.HasKey(pp => pp.fk_idProveedor);
-                pp.HasKey(pp => pp.fk_codigoPieza);
+                pp.HasKey(pp => new { pp.fk_idProveedor, pp.fk_codigoPieza });
 
                 pp.Property(p => p.fk_codigoPieza).HasColumnName("codigoPieza");
                 pp.Property(p => p.fk_idProveedor).HasColumnName("idProveedor").HasMaxLength(4);
