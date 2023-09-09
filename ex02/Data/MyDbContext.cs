@@ -20,9 +20,10 @@ namespace ex02.Data
             // Tabla intermedia (Cientifico_Proyecto)
             modelBuilder.Entity<Cientifico_Proyecto>(cp =>
             {
-                cp.ToTable("asignado_a");
+                cp.ToTable("ASIGNADO_A");
                 cp.HasKey(cp => cp.fk_cientifico_dni);
                 cp.HasKey(cp => cp.fk_proyecto_id);
+                cp.HasKey(cp => new { cp.fk_cientifico_dni, cp.fk_proyecto_id});
 
                 cp.HasOne(p => p.v_cientifico).WithMany(p => p.v_cientifico_proyecto).HasForeignKey(p => p.fk_cientifico_dni);
                 cp.HasOne(p => p.v_proyecto).WithMany(p => p.v_cientifico_proyecto).HasForeignKey(p => p.fk_proyecto_id);
@@ -34,7 +35,7 @@ namespace ex02.Data
             // TablaA (Cientifico)
             modelBuilder.Entity<Cientifico>(cientifico =>
             {
-                cientifico.ToTable("Cliente");
+                cientifico.ToTable("CIENTIFICOS");
                 cientifico.HasKey(p => p.dni);
                 cientifico.Property(p => p.dni).HasMaxLength(8);
                 cientifico.Property(p => p.nomApels).HasMaxLength(255);
@@ -43,7 +44,7 @@ namespace ex02.Data
             // TablaB (Proyecto)
             modelBuilder.Entity<Proyecto>(proyecto =>
             {
-                proyecto.ToTable("Proyecto");
+                proyecto.ToTable("PROYECTO");
                 proyecto.HasKey(p => p.id);
                 proyecto.Property(p => p.id).HasMaxLength(4);
                 proyecto.Property(p => p.nombre).HasMaxLength(255);
