@@ -21,8 +21,6 @@ namespace ex02.Data
             modelBuilder.Entity<Cientifico_Proyecto>(cp =>
             {
                 cp.ToTable("ASIGNADO_A");
-                cp.HasKey(cp => cp.fk_cientifico_dni);
-                cp.HasKey(cp => cp.fk_proyecto_id);
                 cp.HasKey(cp => new { cp.fk_cientifico_dni, cp.fk_proyecto_id});
 
                 cp.HasOne(p => p.v_cientifico).WithMany(p => p.v_cientifico_proyecto).HasForeignKey(p => p.fk_cientifico_dni);
