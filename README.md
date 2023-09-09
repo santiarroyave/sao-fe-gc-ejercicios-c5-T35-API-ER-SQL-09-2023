@@ -34,11 +34,11 @@ builder.Services.AddDbContext<MyDbContext>(options => options.UseMySql(connectio
 ```
 
 ### Métodos para especificar la versión de la DB
-La versión que especifiques es la versión que *Entity Framework Core* utilizará como guía para comunicarse con la base de datos MySQL. Sin embargo, Entity Framework Core se adaptará automáticamente a la versión del servidor MySQL al que te estás conectando para asegurarse de que la comunicación sea efectiva y compatible.
+La versión que especifiques es la versión que *Entity Framework Core* utilizará como guía para comunicarse con la base de datos MySQL. Sin embargo, *Entity Framework Core* se adaptará automáticamente a la versión del servidor MySQL al que te estás conectando para asegurarse de que la comunicación sea efectiva y compatible.
 
-Poner la versión al configurar Entity Framework Core sirve como una guía inicial que le dice a Entity Framework Core cómo generar consultas SQL y realizar operaciones de base de datos basadas en las características y capacidades de esa versión específica de MySQL. Esta especificación de versión es útil cuando deseas asegurarte de que *Entity Framework Core* aproveche las características específicas de una versión particular de MySQL.
+Poner la versión al configurar *Entity Framework Core* sirve como una guía inicial que le dice a *Entity Framework Core* cómo generar consultas SQL y realizar operaciones de base de datos basadas en las características y capacidades de esa versión específica de MySQL. Esta especificación de versión es útil cuando deseas asegurarte de que *Entity Framework Core* aproveche las características específicas de una versión particular de MySQL.
 
-Sin embargo, Entity Framework Core es lo suficientemente inteligente como para adaptarse automáticamente a la versión del servidor MySQL al que te estás conectando. Esto significa que, aunque especificaste una versión en tu configuración, la biblioteca se ajustará para funcionar correctamente con la versión real del servidor MySQL.
+Sin embargo, *Entity Framework Core* es lo suficientemente inteligente como para adaptarse automáticamente a la versión del servidor MySQL al que te estás conectando. Esto significa que, aunque especificaste una versión en tu configuración, la biblioteca se ajustará para funcionar correctamente con la versión real del servidor MySQL.
 
 #### Obtener versión
 Para obtener la versión se puede usar esta consulta en la DB
@@ -68,4 +68,4 @@ var serverVersion = ServerVersion.Parse("8.1-mysql");
 
 En las cadenas de versión de MySQL, el sufijo "-mysql" a menudo se usa para indicar que se trata de una versión de MySQL específica de una distribución o paquete en particular. No es parte de la versión principal y secundaria de MySQL, sino que se agrega para distinguir versiones específicas utilizadas en paquetes personalizados o distribuciones de MySQL.
 
-En términos de *Entity Framework Core* y la configuración de la cadena de conexión, no es necesario incluir el sufijo "-mysql" en la cadena de versión. Entity Framework Core interpreta la versión principal y secundaria de MySQL y no requiere el sufijo para funcionar correctamente.
+En términos de *Entity Framework Core* y la configuración de la cadena de conexión, no es necesario incluir el sufijo "-mysql" en la cadena de versión. *Entity Framework Core* interpreta la versión principal y secundaria de MySQL y no requiere el sufijo para funcionar correctamente.
