@@ -3,6 +3,20 @@
 ## Paquetes necesarios
 - [Pomelo.EntityFrameworkCore.MySql](https://www.nuget.org/packages/Pomelo.EntityFrameworkCore.MySql)
 
+## Capturas
+### Ejercicio 1
+![imagen](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/assets/135848692/d72ae057-193a-4ae7-9994-78068c4a0e12)
+
+### Ejercicio 2
+![imagen](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/assets/135848692/bae39a59-2ae3-4295-8b41-620c91c06114)
+
+### Ejercicio 3
+![imagen](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/assets/135848692/69e1ea43-99b1-4f0d-8921-a563f1b2f516)
+
+### Ejercicio 4
+![imagen](https://github.com/santiarroyave/sao-fe-gc-ejercicios-c5-T35-API-ER-SQL-09-2023/assets/135848692/f3317cd6-d63d-4659-90ac-d6e50edcea46)
+
+
 ## Pasos
 1. Agregar la cadena de conexión a la DB
 
